@@ -117,7 +117,16 @@ A prática cotidiana prova que o aumento do diálogo entre os diferentes setores
 % o '*' na '\subsubsection' elimina a numeração da seção; se houver nova seção após, a numeração continuará a partir da última numerada.
 
 \subsubsection{Subseção x.x.x}
-Podemos já vislumbrar o modo pelo qual a expansão dos canais de diálogo social auxilia a preparação e a composição das formas de ação. Assim mesmo, a estruturação de redes de cooperação intersetorial aponta para a melhoria da governabilidade em ambientes voláteis. Neste sentido, o julgamento imparcial das eventualidades maximiza as possibilidades por conta da gestão inovadora da qual fazemos parte. O que temos que ter sempre em mente é que a constante divulgação das informações representa uma abertura para a melhoria da inteligência coletiva mobilizada. Caros amigos, o acompanhamento das preferências de consumo causa impacto indireto na reavaliação dos índices pretendidos.
+Podemos já vislumbrar o modo pelo qual a expansão dos canais de diálogo 
+social auxilia a preparação e a composição das formas de ação. Assim 
+mesmo, a estruturação de redes de cooperação intersetorial aponta para a 
+melhoria da governabilidade em ambientes voláteis. Neste sentido, o 
+julgamento imparcial das eventualidades maximiza as possibilidades por 
+conta da gestão inovadora da qual fazemos parte. O que temos que ter 
+sempre em mente é que a constante divulgação das informações representa 
+uma abertura para a melhoria da inteligência coletiva mobilizada. Caros 
+amigos, o acompanhamento das preferências de consumo causa impacto 
+indireto na reavaliação dos índices pretendidos.
 
 \end{document}
 
