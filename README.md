@@ -80,6 +80,10 @@ Este parâmetro deve ser seguido de ```\end{document}``` ao final.
 
 Os dois parâmetros acima são obrigatórios, e existem vários opcionais. 
 
+#### Comentários
+
+Como é um código, o LaTeX permite comentários. Para isso, iniciar a linha comentada com '%'. 
+
 <sub>[⬆](#sumário)</sub>
 ---
 <!--
