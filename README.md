@@ -84,6 +84,8 @@ Os dois parâmetros acima são obrigatórios, e existem vários opcionais.
 
 Como é um código, o LaTeX permite comentários. Para isso, usar '%', no início ou meio da linha. 
 
+Para que o '%' não seja considerado comentário, usar como comando: '\%'. 
+
 <sub>[⬆](#sumário)</sub>
 ---
 <!--
