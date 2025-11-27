@@ -86,7 +86,7 @@ Como é um código, o LaTeX permite comentários. Para isso, usar '%', no iníci
 
 Para que o '%' não seja considerado comentário, usar como comando: '\\%'. 
 
-__PS__: Alguns caracteres especiais, como '&', também precisam ser precedidos de '\'. 
+__PS__: Alguns caracteres especiais, como '&', também precisam ser precedidos de '\\'. 
 
 <sub>[⬆](#sumário)</sub>
 ---
