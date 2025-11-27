@@ -144,7 +144,8 @@ oferece uma interessante oportunidade para verificação do processo de
 comunicação como um todo. Percebemos, cada vez mais, que a redefinição 
 dos modelos de governança aprofunda o debate sobre a sustentabilidade dos 
 processos que moldam a realidade institucional.
-% o '*' na '\subsubsection' elimina a numeração da seção; se houver nova seção após, a numeração continuará a partir da última numerada.
+% o '*' na '\subsubsection' elimina a numeração da seção; se houver nova 
+seção após, a numeração continuará a partir da última numerada.
 
 \subsubsection{Subseção x.x.x}
 Podemos já vislumbrar o modo pelo qual a expansão dos canais de diálogo 
