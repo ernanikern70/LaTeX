@@ -18,6 +18,7 @@
 ### Sumário
 
 - [Instalação](#instalação)
+- [Definições](#definições)
 - [Primeiro documento](#primeiro-documento)
 - [Editores](#editores)
 
@@ -49,6 +50,16 @@ No momento de criação deste manual estou estudando o [Kile](https://kile.sourc
 " }}} 
 -->
 <!--
+" Definições -------------------- {{{
+-->
+## Definições
+
+O LaTeX é um processador de textos com linguagem própria, que não segue o modelo _WYSIWYG - What you see is what you get_. Entretando, há vários editores que permitem pré-visualização dos documentos enquanto são editados.  
+Os documentos LaTeX são salvos com a extensão _.tex_, e após terem seus códigos compilados, geram os documentos em _.pdf_.
+
+<sub>[⬆](#sumário)</sub>
+---
+<!--
 " Primeiro documento ---------------- {{{
 -->
 ## Primeiro documento
@@ -57,14 +68,17 @@ Ao criar um documento no LaTeX, devem ser declarados alguns parâmetros do seu i
 
 O primeiro deles é o tipo ou classe de documento:  
 ```
-\documentclass{article} (Classes listadas em @TODO)
+\documentclass{article} 
 ```
+As diversas classes podem ser encontradas em @TODO.
+
 Para iniciar o documento em si, usa-se o parâmetro '_begin_':
 ```
 \begin{document}
 ```
 Este parâmetro deve ser seguido de ```\end{document}``` ao final. 
 
+Os dois parâmetros acima são obrigatórios, e existem vários opcionais. 
 
 <sub>[⬆](#sumário)</sub>
 ---
