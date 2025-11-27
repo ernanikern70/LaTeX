@@ -93,9 +93,9 @@ __PS__: Alguns caracteres especiais, como '&', também precisam ser precedidos d
 ```
 % PREÂMBULO
 \documentclass[a4paper,10pt]{article}
-
+\usepackage[brazil]{babel} % este pacote coloca os nomes em pt-br
 \usepackage[utf8]{inputenc}
-%\usepackage[brazil]{babel}
+
 %\usepackage{fontenc}
 
 \date{27/11/2025}
@@ -117,6 +117,8 @@ __PS__: Alguns caracteres especiais, como '&', também precisam ser precedidos d
 \end{document}
 ```
 PS: o '*' na '\subsubsection' elimina a numeração da seção; se houver nova seção após, a numeração continuará a partir da última numerada.
+
+Ao inserir seções numeradas anteriores à outras existentes, o LaTeX fará os ajustes. 
 
 <sub>[⬆](#sumário)</sub>
 ---
