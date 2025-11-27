@@ -32,14 +32,14 @@
 -->
 ## Instalação 
 
-#### Instalação do LaTeX no Ubuntu
+### Instalação do LaTeX no Ubuntu
 
 ```
 sudo apt install texlive-full
 ```
 _Instala o texlive com todas as extensões, mais demorado e ocupa espaço, mas é mais prático._
 
-#### Instalação de um editor 
+### Instalação de um editor 
 
 Existem vários editores disponíveis, como o Kile, TeXStudio, e outros, inclusive de que funcionam de forma _online_. 
 
@@ -48,7 +48,16 @@ No momento de criação deste manual estou estudando o [Kile](https://kile.sourc
 <sub>[⬆](#sumário)</sub>
 ---
 <!--
-```
 " }}} 
 -->
 <!--
+" Primeiro documento ---------------- {{{
+-->
+## Primeiro documento
+
+
+<sub>[⬆](#sumário)</sub>
+---
+<!--
+" }}}
+-->
