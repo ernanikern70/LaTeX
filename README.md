@@ -109,7 +109,7 @@ __PS__: Alguns caracteres especiais, como '&', também precisam ser precedidos d
 
     Segunda linha. % para abrir parágrafo, deixar linha anterior em branco
     \subsection{Subseção 1.1}
-    Músicas:
+    Músicas:\\ % o '\\\\' cria quebra de linha
       É isso aí
       Onde estará o meu amor
     \subsubsection*{Subseção 1.1.1} 
