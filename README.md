@@ -18,9 +18,7 @@
 ### Sumário
 
 - [Instalação](#instalação)
-- [Definições](#definições)
-- [](#)
-- [Comandos Úteis](#comandos-úteis)
+- [Primeiro documento](#primeiro-documento)
 - [Editores](#editores)
 
 ---
@@ -58,14 +56,14 @@ No momento de criação deste manual estou estudando o [Kile](https://kile.sourc
 Ao criar um documento no LaTeX, devem ser declarados alguns parâmetros do seu início, ou _preâmbulo_, como é chamado. Todos esses parâmetros são precedidos por uma _contrabarra_ '\'. 
 
 O primeiro deles é o tipo ou classe de documento:  
-
+```
 \documentclass{article} (Classes listadas em @TODO)
-
+```
 Para iniciar o documento em si, usa-se o parâmetro '_begin_':
-
+```
 \begin{document}
-
-Este parâmetro deve ser seguido de '_\end{document}_' ao final. 
+```
+Este parâmetro deve ser seguido de ```\end{document}``` ao final. 
 
 
 <sub>[⬆](#sumário)</sub>
