@@ -37,7 +37,7 @@
 ```
 sudo apt install texlive-full
 ```
-# Instala o texlive com todas as extensões, mais demorado e ocupa espaço, mas é mais prático.
+_Instala o texlive com todas as extensões, mais demorado e ocupa espaço, mas é mais prático._
 
 #### Instalação de um editor 
 
