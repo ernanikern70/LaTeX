@@ -92,33 +92,40 @@ __PS__: Alguns caracteres especiais, como '&', também precisam ser precedidos d
 
 ```
 % PREÂMBULO
-\documentclass[a4paper,10pt]{article} % define a classe do doc e outras opções
-\usepackage[brazil]{babel} % este pacote coloca os nomes em pt-br
-\usepackage[utf8]{inputenc} % pacote para acentuação
-\usepackage{indentfirst} % aplica indentação
+\documentclass[a4paper,10pt]{article}
 
+\usepackage[utf8]{inputenc} % pacote para acentuação
+\usepackage[brazil]{babel} % coloca os nomes em pt-br
+\usepackage{indentfirst} % aplica indentação
 %\usepackage{fontenc}
 
 \date{27/11/2025}
 
 % CORPO DO TEXTO
 \begin{document}
+    \section{Seção antes da seção 1}
+    Texto anterior à seção 1.
     \section{Seção 1}
 
     Meu primeiro documento. Meu primeiro documento. Meu primeiro documento. Meu primeiro documento. Meu primeiro documento. Meu primeiro documento. Meu primeiro documento.
 
     Segunda linha. % para abrir parágrafo, deixar linha anterior em branco
-    \subsection{Subseção 1.1}
-    Músicas:\\ % o '\\' cria quebra de linha
-      É isso aí
-      Onde estará o meu amor
-    \subsubsection*{Subseção 1.1.1} 
-    ```
-    ```
-      Nick Cave \& The Bad Seed
+    \subsection{Subseção x.x}
+    Músicas:\\
+        É isso aí\\
+        Onde estará o meu amor
+    \subsubsection*{Subseção x.x.x}
+        Nick Cave \& The Bad Seeds
+% o '*' na '\subsubsection' elimina a numeração da seção; se houver nova seção após, a numeração continuará a partir da última numerada.
+
+    \subsubsection{Subseção x.x.x}
+    Tom Waits
 
 \end{document}
+
 ```
+
+
 PS: o '*' na '\subsubsection' elimina a numeração da seção; se houver nova seção após, a numeração continuará a partir da última numerada.
 
 Ao inserir seções numeradas anteriores à outras existentes, o LaTeX fará os ajustes. 
