@@ -103,7 +103,9 @@ __PS__: Alguns caracteres especiais, como '&', também precisam ser precedidos d
 
 % CORPO DO TEXTO
 \begin{document}
+
 \section{Seção antes da seção 1}
+
 No mundo atual, a competitividade nas transações comerciais ressalta a 
 relevância da participação ativa da articulação interinstitucional 
 necessária. Considerando as lições aprendidas, a valorização de fatores 
@@ -113,7 +115,9 @@ tendências no sentido de aprovar a manutenção das condições inegavelmente
 apropriadas. O empenho em analisar a necessidade de renovação processual 
 legitima a busca por soluções sistêmicas dos níveis de motivação 
 departamental.    
+
 \section{Seção 1}
+
 É importante questionar o quanto a adoção de políticas descentralizadoras 
 ainda não demonstrou convincentemente que vai participar na mudança das 
 rupturas provocadas pela transformação digital. As experiências acumuladas demonstram que o desenvolvimento contínuo de distintas formas de atuação 
@@ -125,7 +129,9 @@ modificações independentemente do fluxo de informações. À luz das boas
 práticas institucionais, a consulta aos diversos militantes é uma das 
 consequências dos instrumentos regulatórios vigentes.
 % para abrir parágrafo, deixar linha anterior em branco
+
 \subsection{Subseção x.x}
+
 Vale destacar que o início da atividade geral de formação de atitudes 
 exige a precisão e a definição das novas proposições. Por intermédio de 
 análises qualificadas, a valorização da diversidade de pensamento talvez 
@@ -136,7 +142,9 @@ Ainda assim, existem dúvidas a respeito de como a revolução dos costumes
 agrega valor ao estabelecimento dos aprendizados oriundos da experiência 
 acumulada.
 % o '\\' gera quebra de linha
+
 \subsubsection*{Subseção x.x.x}
+
 A prática cotidiana prova que o aumento do diálogo entre os diferentes 
 setores produtivos nos obriga à análise do remanejamento dos quadros 
 funcionais. Pensando mais a longo prazo, a hegemonia do ambiente político 
@@ -148,6 +156,7 @@ processos que moldam a realidade institucional.
 seção após, a numeração continuará a partir da última numerada.
 
 \subsubsection{Subseção x.x.x}
+
 Podemos já vislumbrar o modo pelo qual a expansão dos canais de diálogo 
 social auxilia a preparação e a composição das formas de ação. Assim 
 mesmo, a estruturação de redes de cooperação intersetorial aponta para a 
