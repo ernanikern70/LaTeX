@@ -107,16 +107,16 @@ __PS__: Alguns caracteres especiais, como '&', também precisam ser precedidos d
     Segunda linha.
     \subsection{Subseção 1.1}
     Músicas:
-        É isso aí
-        Onde estará o meu amor
-    \subsubsection*{Subseção 1.1.1}  % o '*' elimina a numeração da seção
+      É isso aí
+      Onde estará o meu amor
+    \subsubsection*{Subseção 1.1.1} 
     ```
     ```
-        Nick Cave \& The Bad Seeds
+      Nick Cave \& The Bad Seeds
 
 \end{document}
 ```
-
+PS: o '*' na '\subsubsection' elimina a numeração da seção; se houver nova seção após, a numeração continuará a partir da última numerada.
 
 <sub>[⬆](#sumário)</sub>
 ---
