@@ -35,8 +35,9 @@
 #### Instalação do LaTeX no Ubuntu
 
 ```
-sudo apt install texlive-full  # instala o texlive com todas as extensões, mais demorado e ocupa espaço, mas mais prático
+sudo apt install texlive-full
 ```
+# Instala o texlive com todas as extensões, mais demorado e ocupa espaço, mas é mais prático.
 
 #### Instalação de um editor 
 
