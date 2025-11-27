@@ -88,6 +88,36 @@ Para que o '%' não seja considerado comentário, usar como comando: '\\%'.
 
 __PS__: Alguns caracteres especiais, como '&', também precisam ser precedidos de '\\'. 
 
+#### Primeiro exemplo de documento
+
+```
+% PREÂMBULO
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[utf8]{inputenc}
+%\usepackage[brazil]{babel}
+%\usepackage{fontenc}
+
+\date{27/11/2025}
+
+% CORPO DO TEXTO
+\begin{document}
+    \section{Seção 1}
+    Meu primeiro documento.
+    Segunda linha.
+    \subsection{Subseção 1.1}
+    Músicas:
+        É isso aí
+        Onde estará o meu amor
+    \subsubsection*{Subseção 1.1.1}  % o '*' elimina a numeração da seção
+    ```
+    ```
+        Nick Cave \& The Bad Seeds
+
+\end{document}
+```
+
+
 <sub>[⬆](#sumário)</sub>
 ---
 <!--
