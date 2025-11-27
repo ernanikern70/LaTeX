@@ -124,8 +124,6 @@ __PS__: Alguns caracteres especiais, como '&', também precisam ser precedidos d
 \end{document}
 
 ```
-
-
 PS: o '*' na '\subsubsection' elimina a numeração da seção; se houver nova seção após, a numeração continuará a partir da última numerada.
 
 Ao inserir seções numeradas anteriores à outras existentes, o LaTeX fará os ajustes. 
