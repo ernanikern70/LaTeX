@@ -95,6 +95,7 @@ __PS__: Alguns caracteres especiais, como '&', também precisam ser precedidos d
 \documentclass[a4paper,10pt]{article} % define a classe do doc e outras opções
 \usepackage[brazil]{babel} % este pacote coloca os nomes em pt-br
 \usepackage[utf8]{inputenc} % pacote para acentuação
+\usepackage{indentfirst} % aplica indentação
 
 %\usepackage{fontenc}
 
@@ -103,8 +104,10 @@ __PS__: Alguns caracteres especiais, como '&', também precisam ser precedidos d
 % CORPO DO TEXTO
 \begin{document}
     \section{Seção 1}
-    Meu primeiro documento.
-    Segunda linha.
+
+    Meu primeiro documento. Meu primeiro documento. Meu primeiro documento. Meu primeiro documento. Meu primeiro documento. Meu primeiro documento. Meu primeiro documento.
+
+    Segunda linha. % para abrir parágrafo, deixar linha anterior em branco
     \subsection{Subseção 1.1}
     Músicas:
       É isso aí
@@ -112,7 +115,7 @@ __PS__: Alguns caracteres especiais, como '&', também precisam ser precedidos d
     \subsubsection*{Subseção 1.1.1} 
     ```
     ```
-      Nick Cave \& The Bad Seeds
+      Nick Cave \& The Bad Seed
 
 \end{document}
 ```
