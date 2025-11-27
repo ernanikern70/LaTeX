@@ -92,9 +92,9 @@ __PS__: Alguns caracteres especiais, como '&', também precisam ser precedidos d
 
 ```
 % PREÂMBULO
-\documentclass[a4paper,10pt]{article}
+\documentclass[a4paper,10pt]{article} % define a classe do doc e outras opções
 \usepackage[brazil]{babel} % este pacote coloca os nomes em pt-br
-\usepackage[utf8]{inputenc}
+\usepackage[utf8]{inputenc} % pacote para acentuação
 
 %\usepackage{fontenc}
 
