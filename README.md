@@ -172,6 +172,16 @@ amigos, o acompanhamento das preferências de consumo causa impacto
 indireto na reavaliação dos índices pretendidos.
 \newpage % cria nova página
 
+\section{Seção x}
+Considerando as lições aprendidas, a dinamização das capacidades institucionais acarreta um processo de reformulação e modernização dos compromissos firmados em instâncias multilaterais. É claro que a consolidação das estruturas nos obriga à análise do sistema de participação geral. À medida que avançamos, a constante divulgação das informações ainda não demonstrou convincentemente que vai participar na mudança dos níveis de motivação departamental. Levando em consideração as tendências globais, a articulação entre os diferentes níveis institucionais ressalta a relevância da participação ativa do levantamento das variáveis envolvidas. De acordo com especialistas, a contínua expansão de nossa atividade converge para práticas mais resolutivas dos conhecimentos estratégicos para atingir a excelência.
+
+\subsection{Formatação}
+
+\noindent\textbf{Texto em negrito}\\
+\textit{Texto em itálico}\\
+\underline{Texto sublinhado}\\
+\textbf{\textit{\underline{Texto em negrito, itálico e sublinhado}}}\\
+
 \end{document}
 
 ```
