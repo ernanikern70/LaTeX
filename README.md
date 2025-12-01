@@ -100,8 +100,9 @@ __PS__: Alguns caracteres especiais, como '&', também precisam ser precedidos d
 \usepackage[utf8]{inputenc} % pacote para acentuação
 \usepackage[brazil]{babel} % coloca os nomes em pt-br
 \usepackage{indentfirst} % aplica indentação
-%\usepackage{fontenc}
-
+\usepackage{setspace} % altera espaçamento entre linhas
+%\usepackage[a4paper, margin=2cm]{geometry} % ajusta a margem geral
+\usepackage[a4paper, left=2cm, right=1.5cm, top=3cm, bottom=2cm]{geometry}
 \setlength{\parindent}{1,5cm} % ajusta a indentação do parágrafo
 \setlength{\parskip}{1cm} % ajusta a separação entre parágrafos
 
@@ -110,11 +111,16 @@ __PS__: Alguns caracteres especiais, como '&', também precisam ser precedidos d
 % CORPO DO TEXTO
 \begin{document}
     \section{Seção antes da seção 1}
+    \onehalfspacing % espaçamento 1,5 entre linhas
 No mundo atual, a competitividade nas transações comerciais ressalta a relevância da participação ativa da articulação interinstitucional necessária. Considerando as lições aprendidas, a valorização de fatores subjetivos não pode mais se dissociar de alternativas às soluções ortodoxas. Não obstante, a expansão dos mercados mundiais apresenta tendências no sentido de aprovar a manutenção das condições inegavelmente apropriadas. O empenho em analisar a necessidade de renovação processual legitima a busca por soluções sistêmicas dos níveis de motivação departamental.    \section{Seção 1}
+\setstretch{2} % ajusta espaçamento personalizado
 É importante questionar o quanto a adoção de políticas descentralizadoras ainda não demonstrou convincentemente que vai participar na mudança das rupturas provocadas pela transformação digital. As experiências acumuladas demonstram que o desenvolvimento contínuo de distintas formas de atuação modifica os parâmetros tradicionais de análise dos conhecimentos estratégicos para atingir a excelência.
-
-Evidentemente, a complexidade dos estudos efetuados deve passar por modificações independentemente do fluxo de informações. À luz das boas práticas institucionais, a consulta aos diversos militantes é uma das consequências dos instrumentos regulatórios vigentes.
 % para abrir parágrafo, deixar linha anterior em branco
+
+\begin{onehalfspace} % \begin{spacing}{1,5}
+Evidentemente, a complexidade dos estudos efetuados deve passar por modificações independentemente do fluxo de informações. À luz das boas práticas institucionais, a consulta aos diversos militantes é uma das consequências dos instrumentos regulatórios vigentes.
+\end{onehalfspace} % \end{spacing}
+
     \subsection{Subseção x.x}
 Vale destacar que o início da atividade geral de formação de atitudes exige a precisão e a definição das novas proposições. Por intermédio de análises qualificadas, a valorização da diversidade de pensamento talvez venha a ressaltar a relatividade das condições estruturais subjacentes.\\ De acordo com especialistas, a crescente influência da mídia faz parte de um processo de gerenciamento das regras de conduta normativas.\\ Ainda assim, existem dúvidas a respeito de como a revolução dos costumes agrega valor ao estabelecimento dos aprendizados oriundos da experiência acumulada.
 % o '\\' gera quebra de linha
