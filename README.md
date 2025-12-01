@@ -102,78 +102,31 @@ __PS__: Alguns caracteres especiais, como '&', também precisam ser precedidos d
 \usepackage{indentfirst} % aplica indentação
 %\usepackage{fontenc}
 
+\setlength{\parindent}{1,5cm} % ajusta a indentação do parágrafo
+\setlength{\parskip}{1cm} % ajusta a separação entre parágrafos
+
 \date{27/11/2025}
 
 % CORPO DO TEXTO
 \begin{document}
+    \section{Seção antes da seção 1}
+No mundo atual, a competitividade nas transações comerciais ressalta a relevância da participação ativa da articulação interinstitucional necessária. Considerando as lições aprendidas, a valorização de fatores subjetivos não pode mais se dissociar de alternativas às soluções ortodoxas. Não obstante, a expansão dos mercados mundiais apresenta tendências no sentido de aprovar a manutenção das condições inegavelmente apropriadas. O empenho em analisar a necessidade de renovação processual legitima a busca por soluções sistêmicas dos níveis de motivação departamental.    \section{Seção 1}
+É importante questionar o quanto a adoção de políticas descentralizadoras ainda não demonstrou convincentemente que vai participar na mudança das rupturas provocadas pela transformação digital. As experiências acumuladas demonstram que o desenvolvimento contínuo de distintas formas de atuação modifica os parâmetros tradicionais de análise dos conhecimentos estratégicos para atingir a excelência.
 
-\section{Seção antes da seção 1}
-
-No mundo atual, a competitividade nas transações comerciais ressalta a 
-relevância da participação ativa da articulação interinstitucional 
-necessária. Considerando as lições aprendidas, a valorização de fatores 
-subjetivos não pode mais se dissociar de alternativas às soluções 
-ortodoxas. Não obstante, a expansão dos mercados mundiais apresenta 
-tendências no sentido de aprovar a manutenção das condições inegavelmente 
-apropriadas. O empenho em analisar a necessidade de renovação processual 
-legitima a busca por soluções sistêmicas dos níveis de motivação 
-departamental.    
-
-\section{Seção 1}
-
-É importante questionar o quanto a adoção de políticas descentralizadoras 
-ainda não demonstrou convincentemente que vai participar na mudança das 
-rupturas provocadas pela transformação digital. As experiências acumuladas demonstram que o desenvolvimento contínuo de distintas formas de atuação 
-modifica os parâmetros tradicionais de análise dos conhecimentos 
-estratégicos para atingir a excelência.
-
-Evidentemente, a complexidade dos estudos efetuados deve passar por 
-modificações independentemente do fluxo de informações. À luz das boas 
-práticas institucionais, a consulta aos diversos militantes é uma das 
-consequências dos instrumentos regulatórios vigentes.
+Evidentemente, a complexidade dos estudos efetuados deve passar por modificações independentemente do fluxo de informações. À luz das boas práticas institucionais, a consulta aos diversos militantes é uma das consequências dos instrumentos regulatórios vigentes.
 % para abrir parágrafo, deixar linha anterior em branco
-
-\subsection{Subseção x.x}
-
-Vale destacar que o início da atividade geral de formação de atitudes 
-exige a precisão e a definição das novas proposições. Por intermédio de 
-análises qualificadas, a valorização da diversidade de pensamento talvez 
-venha a ressaltar a relatividade das condições estruturais subjacentes.\\ 
-De acordo com especialistas, a crescente influência da mídia faz parte 
-de um processo de gerenciamento das regras de conduta normativas.\\ 
-Ainda assim, existem dúvidas a respeito de como a revolução dos costumes 
-agrega valor ao estabelecimento dos aprendizados oriundos da experiência 
-acumulada.
+    \subsection{Subseção x.x}
+Vale destacar que o início da atividade geral de formação de atitudes exige a precisão e a definição das novas proposições. Por intermédio de análises qualificadas, a valorização da diversidade de pensamento talvez venha a ressaltar a relatividade das condições estruturais subjacentes.\\ De acordo com especialistas, a crescente influência da mídia faz parte de um processo de gerenciamento das regras de conduta normativas.\\ Ainda assim, existem dúvidas a respeito de como a revolução dos costumes agrega valor ao estabelecimento dos aprendizados oriundos da experiência acumulada.
 % o '\\' gera quebra de linha
+    \subsubsection*{Subseção x.x.x}
+A prática cotidiana prova que o aumento do diálogo entre os diferentes setores produtivos nos obriga à análise do remanejamento dos quadros funcionais. Pensando mais a longo prazo, a hegemonia do ambiente político oferece uma interessante oportunidade para verificação do processo de comunicação como um todo. Percebemos, cada vez mais, que a redefinição dos modelos de governança aprofunda o debate sobre a sustentabilidade dos processos que moldam a realidade institucional.
+% o '*' na '\subsubsection' elimina a numeração da seção; se houver nova seção após, a numeração continuará a partir da última numerada.
 
-\subsubsection*{Subseção x.x.x}
+    \subsubsection{Subseção x.x.x}
+Podemos já vislumbrar o modo pelo qual a expansão dos canais de diálogo social auxilia a preparação e a composição das formas de ação. Assim mesmo, a estruturação de redes de cooperação intersetorial aponta para a melhoria da governabilidade em ambientes voláteis. Neste sentido, o julgamento imparcial das eventualidades maximiza as possibilidades por conta da gestão inovadora da qual fazemos parte. O que temos que ter sempre em mente é que a constante divulgação das informações representa uma abertura para a melhoria da inteligência coletiva mobilizada. Caros amigos, o acompanhamento das preferências de consumo causa impacto indireto na reavaliação dos índices pretendidos.
 
-A prática cotidiana prova que o aumento do diálogo entre os diferentes 
-setores produtivos nos obriga à análise do remanejamento dos quadros 
-funcionais. Pensando mais a longo prazo, a hegemonia do ambiente político 
-oferece uma interessante oportunidade para verificação do processo de 
-comunicação como um todo. Percebemos, cada vez mais, que a redefinição 
-dos modelos de governança aprofunda o debate sobre a sustentabilidade dos 
-processos que moldam a realidade institucional.
-% o '*' na '\subsubsection' elimina a numeração da seção; se houver nova 
-seção após, a numeração continuará a partir da última numerada.
-
-\subsubsection{Subseção x.x.x}
-
-Podemos já vislumbrar o modo pelo qual a expansão dos canais de diálogo 
-social auxilia a preparação e a composição das formas de ação. Assim 
-mesmo, a estruturação de redes de cooperação intersetorial aponta para a 
-melhoria da governabilidade em ambientes voláteis. Neste sentido, o 
-julgamento imparcial das eventualidades maximiza as possibilidades por 
-conta da gestão inovadora da qual fazemos parte. O que temos que ter 
-sempre em mente é que a constante divulgação das informações representa 
-uma abertura para a melhoria da inteligência coletiva mobilizada. Caros 
-amigos, o acompanhamento das preferências de consumo causa impacto 
-indireto na reavaliação dos índices pretendidos.
-\newpage % cria nova página
-
-\section{Seção x}
 Considerando as lições aprendidas, a dinamização das capacidades institucionais acarreta um processo de reformulação e modernização dos compromissos firmados em instâncias multilaterais. É claro que a consolidação das estruturas nos obriga à análise do sistema de participação geral. À medida que avançamos, a constante divulgação das informações ainda não demonstrou convincentemente que vai participar na mudança dos níveis de motivação departamental. Levando em consideração as tendências globais, a articulação entre os diferentes níveis institucionais ressalta a relevância da participação ativa do levantamento das variáveis envolvidas. De acordo com especialistas, a contínua expansão de nossa atividade converge para práticas mais resolutivas dos conhecimentos estratégicos para atingir a excelência.
+\newpage % cria nova página
 
 \subsection{Formatação}
 
@@ -181,6 +134,24 @@ Considerando as lições aprendidas, a dinamização das capacidades institucion
 \textit{Texto em itálico}\\
 \underline{Texto sublinhado}\\
 \textbf{\textit{\underline{Texto em negrito, itálico e sublinhado}}}\\
+
+\begin{flushleft}
+Texto à esquerda
+\end{flushleft}
+
+\begin{center}
+Texto centralizado
+\end{center}
+
+\begin{flushright}
+Texto à direita
+\end{flushright}
+
+{\tiny Texto pequeno.}
+
+{\Huge Texto Grande.}
+
+Texto Normal.
 
 \end{document}
 
