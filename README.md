@@ -60,6 +60,9 @@ Os documentos LaTeX são salvos com a extensão _.tex_, e após terem seus códi
 <sub>[⬆](#sumário)</sub>
 ---
 <!--
+" --------------- }}}
+-->
+<!--
 " Primeiro documento ---------------- {{{
 -->
 ## Primeiro documento
@@ -167,6 +170,7 @@ sempre em mente é que a constante divulgação das informações representa
 uma abertura para a melhoria da inteligência coletiva mobilizada. Caros 
 amigos, o acompanhamento das preferências de consumo causa impacto 
 indireto na reavaliação dos índices pretendidos.
+\newpage % cria nova página
 
 \end{document}
 
