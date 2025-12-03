@@ -42,7 +42,7 @@ _Instala o texlive com todas as extensões, mais demorado e ocupa espaço, mas �
 
 Existem vários editores disponíveis, como o Kile, TeXStudio, e outros, inclusive de que funcionam de forma _online_. 
 
-No momento de criação deste manual estou estudando o [Kile](https://kile.sourceforge.io/), que pode ser instalado via repositórios do Ubuntu. 
+No momento de criação deste manual estou estudando o [Kile](https://kile.sourceforge.io/), e o [TexStudio](https://www.texstudio.org/), ambos podem ser instalados via repositórios do Ubuntu. 
 
 <sub>[⬆](#sumário)</sub>
 ---
@@ -60,7 +60,7 @@ Os documentos LaTeX são salvos com a extensão _.tex_, e após terem seus códi
 <sub>[⬆](#sumário)</sub>
 ---
 <!--
-" --------------- }}}
+" --------------- }}} 
 -->
 <!--
 " Primeiro documento ---------------- {{{
@@ -139,7 +139,7 @@ Considerando as lições aprendidas, a dinamização das capacidades institucion
 \noindent\textbf{Texto em negrito}\\
 \textit{Texto em itálico}\\
 \underline{Texto sublinhado}\\
-\textbf{\textit{\underline{Texto em negrito, itálico e sublinhado}}}\\
+\textbf{\textit{\under line{Texto em negrito, itálico e sublinhado}}}\\
 
 \begin{flushleft}
 Texto à esquerda
