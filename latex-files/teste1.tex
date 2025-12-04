@@ -11,6 +11,8 @@
 \usepackage{graphicx} % permite adicionar figuras, sem priorizar a posição
 \usepackage{float} % insere figuras forçando o posicionamento
 \usepackage{colortbl}
+\usepackage{booktabs}
+\usepackage{multirow} % mescla linhas de tabelas
 
 \setlength{\parindent}{1,5cm} % ajusta a indentação do parágrafo
 \setlength{\parskip}{1cm} % ajusta a separação entre parágrafos
@@ -67,7 +69,7 @@ A prática cotidiana prova que o aumento do diálogo entre os diferentes setores
 Podemos já vislumbrar o modo pelo qual a expansão dos canais de diálogo social auxilia a preparação e a composição das formas de ação. Assim mesmo, a estruturação de redes de cooperação intersetorial aponta para a melhoria da governabilidade em ambientes voláteis. Neste sentido, o julgamento imparcial das eventualidades maximiza as possibilidades por conta da gestão inovadora da qual fazemos parte. O que temos que ter sempre em mente é que a constante divulgação das informações representa uma abertura para a melhoria da inteligência coletiva mobilizada. Caros amigos, o acompanhamento das preferências de consumo causa impacto indireto na reavaliação dos índices pretendidos.
 
 % TODO: \usepackage{graphicx} required
-\begin{figure}
+\begin{figure} % sem o '[H]', a figura será posicionada onde for melhor
 	\centering
 	\includegraphics[width=0.7\linewidth]{images/image.png}
 	\caption[Figura 1]{Figura exemplo 1}
@@ -99,8 +101,9 @@ A partir de reflexões estratégicas, o novo modelo estrutural aqui preconizado 
 % Please add the following required packages to your document preamble:
 % \usepackage[table,xcdraw]{xcolor}
 % Beamer presentation requires \usepackage{colortbl} instead of \usepackage[table,xcdraw]{xcolor}
-\begin{table}[]
+\begin{table}[H]
 	\centering
+	\sffamily
 	\begin{tabular}{|l|ccc|}
 		\hline
 		\textbf{ID} & \multicolumn{1}{l|}{\textbf{Nome}} & \multicolumn{1}{l|}{\textbf{Sobrenome}} & \multicolumn{1}{l|}{\textbf{Idade}} \\ \hline
@@ -114,6 +117,37 @@ A partir de reflexões estratégicas, o novo modelo estrutural aqui preconizado 
 \end{table}
 
 Gostaria de enfatizar que a integração das tecnologias emergentes auxilia a preparação e a composição dos índices pretendidos. Neste sentido, a adoção de políticas descentralizadoras estimula a padronização do fluxo de informações. Todavia, a necessidade de renovação processual maximiza as possibilidades por conta da maturidade alcançada nos processos de mudança. Considerando os desafios contemporâneos, o julgamento imparcial das eventualidades ilustra as tensões entre tradição e inovação das diversas correntes de pensamento. Não obstante, a gestão eficiente dos recursos estratégicos requer um olhar atento sobre os desdobramentos do remanejamento dos quadros funcionais.
+
+\section{Tabela com merge}
+
+Abaixo uma tabela usando merge de células: 
+
+% Please add the following required packages to your document preamble:
+
+\begin{table}[H]
+	\centering
+	\sffamily
+	\begin{tabular}{@{}|l|lc|@{}}
+		\toprule
+		\textbf{A1} & \multicolumn{2}{l|}{\multirow{2}{*}{\textbf{B1}}} \\ \cmidrule(r){1-1}
+		\textbf{A2} & \multicolumn{2}{l|}{}                             \\ \midrule
+		\textbf{A3} & \multicolumn{1}{c|}{}              &              \\ \bottomrule
+	\end{tabular}
+	\caption{Tabela 2}
+	\label{tab:table2}
+	\vspace{2\baselineskip} % deixa 2 linhas em branco
+	
+% AS LINHAS ACIMA DEIXAM A TABELA 'FEIA', COM LINHAS DESENCONTRADAS
+
+	\begin{tabular}{|l|l|l|}
+		\hline
+		\textbf{A1} & \multicolumn{2}{c|}{\multirow{2}{*}{\textbf{B1}}} \\ \cline{1-1}
+		\textbf{A2} & \multicolumn{2}{c|}{}                             \\ \hline
+		\textbf{A3} & &                                                 \\ \hline
+	\end{tabular}
+	\caption{Tabela 3}
+	\label{tab:table3}
+\end{table}
 
 \section{Listas}
 
