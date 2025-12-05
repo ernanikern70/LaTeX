@@ -21,6 +21,9 @@
 
 \date{27/11/2025}
 
+\renewcommand{\sin}{\mathrm{sen\hspace{0.5mm}}} % traduz a função 'sin' para o português
+%\DeclareMathOperator{\sen}{sen} % método melhor que o acima, mas exige que se use '\sen' no texto
+
 % CORPO DO TEXTO
 \begin{document}
 \sffamily
@@ -145,7 +148,7 @@ Abaixo uma tabela usando merge de células:
 		\hline
 		\centering\textbf{A1} & \multicolumn{2}{c|}{\multirow{2}{*}{\textbf{B1}}} \\ \cline{1-1}
 		\hfill\textbf{A2} & \multicolumn{2}{c|}{}                             \\ \hline
-		\cline{1-1}\textbf{A3} & &                                                 \\ \hline
+		\cline{1-3}\textbf{A3} & &                                                 \\ \hline
 	\end{tabularx}
 	\caption{Tabela 3}
 	\label{tab:table3}
@@ -228,6 +231,14 @@ Equação do 2º grau: $ ax^2 + bx + c = 0 $ % equação dentro do corpo do text
 	0 & 1 & 0 \\
 	0 & 0 & 1
 	\end{bmatrix}
+\end{equation}
+
+\subsection{Seno e Tangente}
+\begin{equation}
+	\sin{2x}
+\end{equation}
+\begin{equation}
+	\tan{2x}
 \end{equation}
 
 \end{document}
