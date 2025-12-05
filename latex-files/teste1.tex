@@ -13,6 +13,8 @@
 \usepackage{colortbl}
 \usepackage{booktabs}
 \usepackage{multirow} % mescla linhas de tabelas
+\usepackage{tabularx} % ajusta margens
+\usepackage{amsmath} % modo matemático
 
 \setlength{\parindent}{1,5cm} % ajusta a indentação do parágrafo
 \setlength{\parskip}{1cm} % ajusta a separação entre parágrafos
@@ -138,13 +140,13 @@ Abaixo uma tabela usando merge de células:
 	\vspace{2\baselineskip} % deixa 2 linhas em branco
 	
 % AS LINHAS ACIMA DEIXAM A TABELA 'FEIA', COM LINHAS DESENCONTRADAS
-
-	\begin{tabular}{|l|l|l|}
+	\renewcommand{\arraystretch}{1.5} % aumenta as margens u/d da tabela ('renewcommand' serve para várias coisas) - para voltar ao padrão, usar o valor 1.
+	\begin{tabularx}{0.3\textwidth}{|X|X|X|} % usa o pacote com ajuste de margens - o 'X' define que aquela coluna será expandida
 		\hline
-		\textbf{A1} & \multicolumn{2}{c|}{\multirow{2}{*}{\textbf{B1}}} \\ \cline{1-1}
-		\textbf{A2} & \multicolumn{2}{c|}{}                             \\ \hline
-		\textbf{A3} & &                                                 \\ \hline
-	\end{tabular}
+		\centering\textbf{A1} & \multicolumn{2}{c|}{\multirow{2}{*}{\textbf{B1}}} \\ \cline{1-1}
+		\hfill\textbf{A2} & \multicolumn{2}{c|}{}                             \\ \hline
+		\cline{1-1}\textbf{A3} & &                                                 \\ \hline
+	\end{tabularx}
 	\caption{Tabela 3}
 	\label{tab:table3}
 \end{table}
@@ -198,5 +200,34 @@ Texto à direita
 {\Huge Texto Grande.}
 
 Texto Normal.
+\newpage
+\section{Modo Matemático}
+
+\subsection{Equações no corpo do texto}
+Equação do 2º grau: $ ax^2 + bx + c = 0 $ % equação dentro do corpo do texto
+
+\subsection{Equações isoladas do texto}
+\begin{equation} % equações ficam numeradas, para eliminar usar "*".
+	x = \frac{-b \pm \sqrt{b^2 -4ac}}{2a} % \frac = fração{num}{den}, \sqrt= raiz, \sqrt[x] = raiz de x
+\end{equation}
+
+\subsection{Arrays}
+\begin{equation}
+	\begin{array}{cc}
+		x_1= \dfrac{-b + \sqrt{b² -4ac}}{2a}, & % '_' = subescrito
+		x_2= \dfrac{-b - \sqrt{b² - 4ac}}{2a} \\
+		x_1= \dfrac{-b + \sqrt{b² -4ac}}{2a}, & % '_' = subescrito
+		x_2= \dfrac{-b - \sqrt{b² - 4ac}}{2a} \\
+	\end{array}	
+\end{equation}
+
+\subsection{Matrizes}
+\begin{equation}
+	A = \begin{bmatrix}
+	1 & 0 & 0 \\
+	0 & 1 & 0 \\
+	0 & 0 & 1
+	\end{bmatrix}
+\end{equation}
 
 \end{document}

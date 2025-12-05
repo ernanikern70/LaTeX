@@ -1,3 +1,4 @@
 *.aux
 *.lo*
 *.toc
+*.synctex.gz
