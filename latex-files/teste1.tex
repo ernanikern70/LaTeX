@@ -241,4 +241,29 @@ Equação do 2º grau: $ ax^2 + bx + c = 0 $ % equação dentro do corpo do text
 	\tan{2x}
 \end{equation}
 
+\section{Bibliografia}
+
+Bibliografias são criadas em arquivos separados, \underline{obrigatoriamente com a extensão .bib}. 
+
+O arquivo .bib, caso seja criado automaticamente por uma plataforma de edição, terá o seguinte formato: 
+
+\begin{verbatim}
+	@book{ID,
+		author = {author},
+		title = {title},
+		date = {date},
+		OPTeditor = {editor},
+		OPTeditora = {editora},
+		OPTeditorb = {editorb},
+		OPTeditorc = {editorc},
+		OPTtranslator = {translator},
+		...
+		OPTeprinttype = {eprinttype},
+		OPTurl = {url},
+		OPTurldate = {urldate},
+}
+\end{verbatim}
+
+Todos os itens iniciados por OPT podem ser removidos ou ignorados, se não forem usados. \underline{Caso se pretenda usá-los}, é preciso remover o prefixo OPT dos campos. 
+
 \end{document}
