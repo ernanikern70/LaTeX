@@ -4,3 +4,6 @@
 *.synctex.gz
 *.bbl
 *.blg
+*.nav
+*.out
+*.snm

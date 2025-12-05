@@ -4,7 +4,7 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
-\usepackage{graphicx}
+\usepackage{graphicx} % usado para incluir o logo
 \usetheme{CambridgeUS}
 \usepackage{lmodern}
 \usepackage[portuguese]{babel}
@@ -12,9 +12,9 @@
 \begin{document}
 	\author{Ernani Kern}
 	\title{Apresentação LaTeX}
-	%\subtitle{}
+	\subtitle{Subtítulo}
 	%\logo{}
-	%\institute{}
+	\institute{Udemy}
 	%\date{}
 	%\subject{}
 	%\setbeamercovered{transparent}
@@ -22,7 +22,13 @@
 	\begin{frame}[plain]
 		\maketitle
 	\end{frame}
-	
+	\begin{frame}
+		\frametitle{Título do Frame}
+		\begin{block}{Exemplo de bloco}
+			Este é um bloco
+		\end{block}
+	\end{frame}
+		
 	\begin{frame}
 		\frametitle{}
 	\end{frame}
