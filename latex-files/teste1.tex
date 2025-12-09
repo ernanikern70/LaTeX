@@ -15,9 +15,13 @@
 \usepackage{multirow} % mescla linhas de tabelas
 \usepackage{tabularx} % ajusta margens
 \usepackage{amsmath} % modo matemático
+\usepackage{multicol} % usar texto em colunas
+\usepackage{lipsum} % gerar texto de exemplo (lorem ipsum, que possui 150 parágrafos no total)
+% o LIPSUM pode ser usado em português (ptlipsum), pode gerar parágrafos personalizados (SetLipsumPar{n}{parágrafo}), e pode gerar textos sobre TI, matemática, redes, etc (erlipsum). ???? dica do chatgpt... 
 
 \setlength{\parindent}{1,5cm} % ajusta a indentação do parágrafo
 \setlength{\parskip}{1cm} % ajusta a separação entre parágrafos
+\setlength{\columnsep}{5mm} % separação entre colunas
 
 \date{27/11/2025}
 
@@ -49,29 +53,32 @@
 \pagenumbering{arabic} % numeração de páginas em arábico
     \section{Seção antes da seção 1}
     \onehalfspacing % espaçamento 1,5 entre linhas
-No mundo atual, a competitividade nas transações comerciais ressalta a relevância da participação ativa da articulação interinstitucional necessária. Considerando as lições aprendidas, a valorização de fatores subjetivos não pode mais se dissociar de alternativas às soluções ortodoxas. Não obstante, a expansão dos mercados mundiais apresenta tendências no sentido de aprovar a manutenção das condições inegavelmente apropriadas. O empenho em analisar a necessidade de renovação processual legitima a busca por soluções sistêmicas dos níveis de motivação departamental.
+\lipsum[1-2] % parágrafos 1 e 2 do lorem ipsum
+
 \textcolor{red}{Texto em vermelho}
 \colorbox{gray}{\textcolor{blue}{Texto Azul e Fundo cinza}}
 %\pagecolor{cyan}
 
 \section{Seção 1}
 \setstretch{2} % ajusta espaçamento personalizado
-É importante questionar o quanto a adoção de políticas descentralizadoras ainda não demonstrou convincentemente que vai participar na mudança das rupturas provocadas pela transformação digital. As experiências acumuladas demonstram que o desenvolvimento contínuo de distintas formas de atuação modifica os parâmetros tradicionais de análise dos conhecimentos estratégicos para atingir a excelência.
+\lipsum[3-4] % parágrafos 3 e 4 do lorem ipsum
+
 % para abrir parágrafo, deixar linha anterior em branco
 
 \begin{onehalfspace} % \begin{spacing}{1,5}
-Evidentemente, a complexidade dos estudos efetuados deve passar por modificações independentemente do fluxo de informações. À luz das boas práticas institucionais, a consulta aos diversos militantes é uma das consequências dos instrumentos regulatórios vigentes.
+\lipsum[5]
 \end{onehalfspace} % \end{spacing}
 
-    \subsection{Subseção x.x}
-Vale destacar que o início da atividade geral de formação de atitudes exige a precisão e a definição das novas proposições. Por intermédio de análises qualificadas, a valorização da diversidade de pensamento talvez venha a ressaltar a relatividade das condições estruturais subjacentes.\\ De acordo com especialistas, a crescente influência da mídia faz parte de um processo de gerenciamento das regras de conduta normativas.\\ Ainda assim, existem dúvidas a respeito de como a revolução dos costumes agrega valor ao estabelecimento dos aprendizados oriundos da experiência acumulada.
+\subsection{Subseção x.x}
+\lipsum[6]
 % o '\\' gera quebra de linha
-    \subsubsection*{Subseção x.x.x}
-A prática cotidiana prova que o aumento do diálogo entre os diferentes setores produtivos nos obriga à análise do remanejamento dos quadros funcionais. Pensando mais a longo prazo, a hegemonia do ambiente político oferece uma interessante oportunidade para verificação do processo de comunicação como um todo. Percebemos, cada vez mais, que a redefinição dos modelos de governança aprofunda o debate sobre a sustentabilidade dos processos que moldam a realidade institucional.
+
+\subsubsection*{Subseção x.x.x}
+\lipsum[7]
 % o '*' na '\subsubsection' elimina a numeração da seção; se houver nova seção após, a numeração continuará a partir da última numerada.
 
-    \subsubsection{Subseção x.x.x}
-Podemos já vislumbrar o modo pelo qual a expansão dos canais de diálogo social auxilia a preparação e a composição das formas de ação. Assim mesmo, a estruturação de redes de cooperação intersetorial aponta para a melhoria da governabilidade em ambientes voláteis. Neste sentido, o julgamento imparcial das eventualidades maximiza as possibilidades por conta da gestão inovadora da qual fazemos parte. O que temos que ter sempre em mente é que a constante divulgação das informações representa uma abertura para a melhoria da inteligência coletiva mobilizada. Caros amigos, o acompanhamento das preferências de consumo causa impacto indireto na reavaliação dos índices pretendidos.
+\subsubsection{Subseção y.y.y}
+\lipsum[8-9]
 
 % TODO: \usepackage{graphicx} required
 \begin{figure} % sem o '[H]', a figura será posicionada onde for melhor
@@ -89,17 +96,15 @@ Podemos já vislumbrar o modo pelo qual a expansão dos canais de diálogo socia
 	\caption[Figura 2]{Figura exemplo 2}
 	\label{fig:fig2}
 \end{figure}
-Considerando as lições aprendidas, a dinamização das capacidades institucionais acarreta um processo de reformulação e modernização dos compromissos firmados em instâncias multilaterais. É claro que a consolidação das estruturas nos obriga à anális`e do sistema de participação geral. À medida que avançamos, a constante divulgação das informações ainda não demonstrou convincentemente que vai participar na mudança dos níveis de motivação departamental. Levando em consideração as tendências globais, a articulação entre os diferentes níveis institucionais ressalta a relevância da participação ativa do levantamento das variáveis envolvidas. De acordo com especialistas, a contínua expansão de nossa atividade converge para práticas mais resolutivas dos conhecimentos estratégicos para atingir a excelência.
+\lipsum[10]
 
+\begin{multicols}{2} % texto em duas colunas
 \section{Seção xyz}
-Podemos já vislumbrar o modo pelo qual o acompanhamento das preferências de consumo obstaculiza a apreciação da importância dos contextos operacionais cada vez mais complexos. Evidentemente, a normatização de fluxos decisórios apresenta tendências no sentido de aprovar a manutenção das dinâmicas sociais em transformação. Com base em dados empíricos, a incorporação de perspectivas multidisciplinares impulsiona o reposicionamento institucional das rupturas provocadas pela transformação digital. Com respaldo nas evidências disponíveis, a consulta aos diversos militantes ancora-se em pressupostos teóricos consistentes dos níveis de motivação departamental. Tendo em vista as transformações em curso, a gestão eficiente dos recursos estratégicos facilita a criação dos compromissos firmados em instâncias multilaterais. \cite{CaveFaith}
-
-À medida que avançamos, a utilização racional de ativos intangíveis ressalta a relevância da participação ativa dos modos de operação convencionais. Por conseguinte, a análise aprofundada dos indicadores-chave prepara-nos para enfrentar situações atípicas decorrentes das interfaces entre as dimensões técnico-políticas. Considerando os desafios contemporâneos, o início da atividade geral de formação de atitudes legitima a busca por soluções sistêmicas da maturidade alcançada nos processos de mudança. Por intermédio de análises qualificadas, o comprometimento entre as equipes oferece uma interessante oportunidade para verificação da governabilidade em ambientes voláteis. Nunca é demais lembrar o peso e o significado destes problemas, uma vez que a execução dos pontos do programa nos obriga à análise das formas de ação.
+\lipsum[11-14] \cite{CaveFaith}
 
 \section{Seção XPTO}
-O cuidado em identificar pontos críticos no surgimento do comércio virtual converge para práticas mais resolutivas das posturas dos órgãos dirigentes com relação às suas atribuições. No entanto, não podemos esquecer que a expansão dos mercados mundiais representa uma abertura para a melhoria do retorno esperado a longo prazo. Acima de tudo, é fundamental ressaltar que a valorização de fatores subjetivos demanda um esforço conjunto de alinhamento do orçamento setorial. De acordo com especialistas, o comprometimento entre as equipes oferece uma interessante oportunidade para verificação dos conhecimentos estratégicos para atingir a excelência. Assim mesmo, a contínua expansão de nossa atividade é uma das consequências da fluidez dos cenários contemporâneos. \cite{KleistPiedade}
-
-A partir de reflexões estratégicas, o novo modelo estrutural aqui preconizado obstaculiza a apreciação da importância das condições financeiras e administrativas exigidas. O empenho em analisar o desenvolvimento contínuo de distintas formas de atuação incorpora valores fundamentais à transformação das regras de conduta normativas. As experiências acumuladas demonstram que a complexidade dos estudos efetuados nos obriga à análise das novas proposições.
+\lipsum[15-17]
+Citação ao Reinhart Kleist. \cite{KleistPiedade}
 
 \subsection{Tabelas}
 % para gerar tabelas, pode-se usar https://tablesgenerator.com
@@ -121,7 +126,7 @@ A partir de reflexões estratégicas, o novo modelo estrutural aqui preconizado 
 	\label{tab:table1}
 \end{table}
 
-Gostaria de enfatizar que a integração das tecnologias emergentes auxilia a preparação e a composição dos índices pretendidos. Neste sentido, a adoção de políticas descentralizadoras estimula a padronização do fluxo de informações. Todavia, a necessidade de renovação processual maximiza as possibilidades por conta da maturidade alcançada nos processos de mudança. Considerando os desafios contemporâneos, o julgamento imparcial das eventualidades ilustra as tensões entre tradição e inovação das diversas correntes de pensamento. Não obstante, a gestão eficiente dos recursos estratégicos requer um olhar atento sobre os desdobramentos do remanejamento dos quadros funcionais. \cite{CaveBunny}
+\end{multicols}
 
 \section{Citações Internas}
 
@@ -310,6 +315,37 @@ Exemplo abaixo:
 
 O arquivo *.bib pode conter vários livros, artigos, etc.
 
+\section{Macros}
+
+Trigger: usado para substituição de termos
+
+As macros podem ser de três tipos:
+
+\begin{enumerate}
+	\item Normal: 
+	\subitem Substituir textos curtos por longos
+	\subitem Substituir abreviaturas por comandos longos
+	\item Environment: 
+	\subitem Cria o 'environment' desejado, com o 'begin\{\} end\{\}'
+	\subitem Pode ser necessário usar \begin{verbatim}'\n'\end{verbatim}para quebra de linha
+	\item Scripts
+	\subitem Para gerar scripts para diversas funções
+\end{enumerate} 
+
+\section{Segmentando o documento em vários arquivos}
+
+A divisão do documento em arquivos separados é útil para organização e caso se queira compartilhar apenas alguns trechos, como algum capítulo, introdução, etc. Os arquivos segmentados também devem ter a extensão .tex.
+
+Neste caso, um documento será o principal, e conterá o preâmbulo, os comandos 'begin\{document\}, etc. 
+
+Os arquivos segmentados não terão preâmbulo ou 'begin\{document\}', e por isso não podem ser compilados diretamente, senão darão erro. 
+
+Estes arquivos devem ser compilados através do arquivo principal, através de:\begin{verbatim}\input{file}\end{verbatim}
+
+Os arquivos segmentados podem, entretanto, declarar outros comandos, para definição de tabelas, inserção de figuras, negrito, itálico, etc. 
+
+\input{segmento1}
+
 % Bibliografia
 \newpage
 \addcontentsline{toc}{section}{Rererências} % adiciona as referências ao sumário
@@ -322,6 +358,5 @@ Para incluir nas referências um livro não citado, usar:
 \begin{verbatim}
 	\nocite{bookxyz}
 \end{verbatim}
-
 
 \end{document}
