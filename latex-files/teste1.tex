@@ -6,7 +6,7 @@
 \usepackage{indentfirst} % aplica indentação
 \usepackage{setspace} % altera espaçamento entre linhas
 %\usepackage[a4paper, margin=2cm]{geometry} % ajusta a margem geral
-\usepackage[a4paper, left=2cm, right=1.5cm, top=3cm, bottom=2cm]{geometry} % adiciona o pacote 'geometry' e configura margens
+\usepackage[a4paper, left=2cm, right=1.5cm, top=3cm, bottom=2.5cm]{geometry} % adiciona o pacote 'geometry' e configura margens
 \usepackage{xcolor} % altera as cores do documento
 \usepackage{graphicx} % permite adicionar figuras, sem priorizar a posição
 \usepackage{float} % insere figuras forçando o posicionamento
@@ -18,10 +18,17 @@
 \usepackage{multicol} % usar texto em colunas
 \usepackage{lipsum} % gerar texto de exemplo (lorem ipsum, que possui 150 parágrafos no total)
 % o LIPSUM pode ser usado em português (ptlipsum), pode gerar parágrafos personalizados (SetLipsumPar{n}{parágrafo}), e pode gerar textos sobre TI, matemática, redes, etc (erlipsum). ???? dica do chatgpt... 
+\usepackage{csquotes} % coloca aspas para citações diretas
+\usepackage{draftwatermark} % habilita marca dágua
+\usepackage{transparent} % transparência
+\usepackage{enumitem} % disponibiliza opções para listas
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=red]{hyperref} % ver comentários abaixo
+%\usepackage[hidelinks]{hyperref} % links http - MANTER ABAIXO DOS OUTROS 'usepackage', pois pode alterar alguns comandos. - HIDELINKS evita que os títulos do sumário e notas de rodapé recebam um círculo colorido
 
 \setlength{\parindent}{1,5cm} % ajusta a indentação do parágrafo
-\setlength{\parskip}{1cm} % ajusta a separação entre parágrafos
+\setlength{\parskip}{0.1cm} % ajusta a separação entre parágrafos
 \setlength{\columnsep}{5mm} % separação entre colunas
+\setlist{itemsep=-5pt, topsep=0pt} % define espaçamento de listas globalmente
 
 \date{27/11/2025}
 
@@ -30,6 +37,7 @@
 
 % CORPO DO TEXTO
 \begin{document}
+\SetWatermarkText{} % seta o texto para a marca dágua antes da posição da figura, ou elimina, se deixado em branco; se não declarado, usar a marca 'draft'
 \sffamily
 \title{\textbf{\huge{Capa e Sumário}}}
 \author{\textbf{Ernani Kern}}
@@ -51,8 +59,8 @@
 
 \setcounter{page}{1} % reinicia de novo a numeração de páginas
 \pagenumbering{arabic} % numeração de páginas em arábico
-    \section{Seção antes da seção 1}
-    \onehalfspacing % espaçamento 1,5 entre linhas
+\section{Seção antes da seção 1}
+\onehalfspacing % espaçamento 1,5 entre linhas
 \lipsum[1-2] % parágrafos 1 e 2 do lorem ipsum
 
 \textcolor{red}{Texto em vermelho}
@@ -70,6 +78,7 @@
 \end{onehalfspace} % \end{spacing}
 
 \subsection{Subseção x.x}
+\SetWatermarkText{\transparent{0.3}\includegraphics[width=0.5\linewidth]{images/marca.jpg}} % inclui marca dágua a partir deste ponto
 \lipsum[6]
 % o '\\' gera quebra de linha
 
@@ -96,7 +105,10 @@
 	\caption[Figura 2]{Figura exemplo 2}
 	\label{fig:fig2}
 \end{figure}
-\lipsum[10]
+\lipsum[10]\footnote{Esta é a nota de rodapé 1.}\footnote{Esta é a nota de rodapé 2.}
+
+\SetWatermarkText{RASCUNHO} % muda a marca dágua a partir daqui
+\SetWatermarkScale{3}
 
 \begin{multicols}{2} % texto em duas colunas
 \section{Seção xyz}
@@ -186,6 +198,7 @@ Lista ordenada:
 Lista com descrição: 
 \begin{description}
 	\item[Primeiro item] Este é um item
+	\item[Segundo item] Item dois
 \end{description}
 
 \newpage % cria nova página
@@ -215,6 +228,7 @@ Texto à direita
 
 Texto Normal.
 \newpage
+\SetWatermarkText{}
 \section{Modo Matemático}
 
 \subsection{Equações no corpo do texto}
@@ -346,9 +360,45 @@ Os arquivos segmentados podem, entretanto, declarar outros comandos, para defini
 
 \input{segmento1}
 
+\section{Citações Diretas}
+
+"Esta é uma citação direta literal, mas o primeiro par de aspas está invertido"
+
+''Aqui usei duas aspas simples no início, não resolveu."
+
+\enquote{Outro texto entre aspas, usando o pacote 'csquote', funciona.}
+
+\begin{quote}
+	Uma citação curta usando 'begin\{quote\}'.
+\end{quote}
+
+\begin{quotation}
+	Citação mais longa, agora usando 'begin\{quotation\}', este modo adiciona indentações para os textos mais longos e profundos.... 
+\end{quotation}
+
+\section{Documentos Formatados pela ABNT}
+
+Site da \href{https://www.abntex.net.br/}{AbnTeX}: \url{https://www.abntex.net.br/}
+
+O \href{https://www.abntex.net.br}{abnTeX2} é um conjunto de classes e pacotes LaTeX criado para facilitar a produção de documentos formatados segundo as normas da ABNT (trabalhos acadêmicos, relatórios, livros, monografias, TCCs, teses e dissertações).
+
+Ele não é só um template, mas um framework completo para documentos em português seguindo ABNT.
+
+O abnTeX inclui: 
+
+\begin{itemize}
+	\item abntex2 (genérica)
+	\item abntex2-report (para relatórios)
+	\item abntex2-article (para artigos)
+	\item abntex2-book
+	\item abntex2-tese (para teses)
+\end{itemize}
+
+O site do abnTeX disponibiliza um instalador que fornece arquivos .cls, .sty e templates para o texlive. 
+
 % Bibliografia
 \newpage
-\addcontentsline{toc}{section}{Rererências} % adiciona as referências ao sumário
+\addcontentsline{toc}{section}{Referências} % adiciona as referências ao sumário / 'toc' = table of contents
 \bibliographystyle{apalike} % os estilos podem ser pesquisados na internet
 \bibliography{bibaula} % define o arquivo de bibliografia
 
