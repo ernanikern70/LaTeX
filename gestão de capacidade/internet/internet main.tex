@@ -9,6 +9,7 @@
 % Pacotes 
 % ---
 \usepackage[utf8]{inputenc} % pacote para acentuação
+\usepackage[T1]{fontenc}
 \usepackage[brazil]{babel} % coloca os nomes em pt-br
 \usepackage{indentfirst} % aplica indentação
 \usepackage{setspace} % altera espaçamento entre linhas
@@ -22,6 +23,8 @@
 \usepackage{draftwatermark} % habilita marca dágua
 \usepackage{transparent} % transparência
 \usepackage{enumitem} % disponibiliza opções para listas
+\usepackage{tocloft}
+\usepackage{titling} % controla espaçamentos do /maketitle
 \usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=red]{hyperref} % ver comentários abaixo
 %\usepackage[hidelinks]{hyperref} % links http - MANTER ABAIXO DOS OUTROS 'usepackage', pois pode alterar alguns comandos. - HIDELINKS evita que os títulos do sumário e notas de rodapé recebam um círculo colorido
 %\usepackage{colortbl}
@@ -35,6 +38,17 @@
 \setlength{\columnsep}{5mm} % separação entre colunas
 \setlist{itemsep=-5pt, topsep=0pt} % define espaçamento de listas globalmente
 
+% deixa todo o documento em sans serif
+\renewcommand{\familydefault}{\sfdefault}
+
+% configura espaçamentos do \maketitle
+\pretitle{\begin{center}\LARGE\bfseries}
+\posttitle{\par\vspace{5cm}\end{center}}
+\preauthor{\begin{center}\large}
+\postauthor{\par\vspace{3cm}\end{center}}
+\predate{\begin{center}\normalsize}
+\postdate{\par\end{center}}
+
 % ---
 % CORPO DO TEXTO
 % ---
@@ -46,20 +60,11 @@
 % ---
 % CAPA
 % ---
-%\begin{titlepage}
-%	\centering
-%	{\sffamily\huge\bfseries Gestão de Capacidade - INTERNET \par}
-%	\vfill
-%	{\Large Ernani Kern - DIRT \par}
-%	\vfill
-%	\today
-%\end{titlepage}
-
 	\title{\textbf{\huge{Gestão de Capacidade - INTERNET}}}
 	\author{\textbf{Ernani Kern - DIRT}}
 
 	\maketitle % mostra os parâmetros acima, senão, não aparecem
-%	\thispagestyle{empty} % oculta a numeração da página
+	\thispagestyle{empty} % oculta a numeração da página
 	\newpage
 	\setcounter{page}{1} % reseta a contagem de páginas, e inicia aqui com '1'
 	\pagenumbering{Roman} % altera para alg romano; o 'R' maiúsculo deixa a numeração em maiúsculas
