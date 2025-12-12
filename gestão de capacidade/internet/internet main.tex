@@ -1,0 +1,143 @@
+% PREÂMBULO
+
+% ---
+% Opções do documento
+% ---
+\documentclass[a4paper,10pt]{article}
+
+% ---
+% Pacotes 
+% ---
+\usepackage[utf8]{inputenc} % pacote para acentuação
+\usepackage[brazil]{babel} % coloca os nomes em pt-br
+\usepackage{indentfirst} % aplica indentação
+\usepackage{setspace} % altera espaçamento entre linhas
+%\usepackage[a4paper, margin=2cm]{geometry} % ajusta a margem geral
+\usepackage[a4paper, left=2cm, right=1.5cm, top=3cm, bottom=2.5cm]{geometry} % adiciona o pacote 'geometry' e configura margens
+\usepackage{xcolor} % altera as cores do documento
+\usepackage{graphicx} % permite adicionar figuras, sem forçar posição
+\usepackage{float} % insere figuras forçando o posicionamento
+\usepackage{tabularx} % ajusta margens
+\usepackage{amsmath} % modo matemático
+\usepackage{draftwatermark} % habilita marca dágua
+\usepackage{transparent} % transparência
+\usepackage{enumitem} % disponibiliza opções para listas
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=red]{hyperref} % ver comentários abaixo
+%\usepackage[hidelinks]{hyperref} % links http - MANTER ABAIXO DOS OUTROS 'usepackage', pois pode alterar alguns comandos. - HIDELINKS evita que os títulos do sumário e notas de rodapé recebam um círculo colorido
+%\usepackage{colortbl}
+%\usepackage{booktabs}
+%\usepackage{multirow} % mescla linhas de tabelas
+%\usepackage{multicol} % usar texto em colunas
+%\usepackage{csquotes} % coloca aspas para citações diretas
+
+\setlength{\parindent}{1,5cm} % ajusta a indentação do parágrafo
+\setlength{\parskip}{0.1cm} % ajusta a separação entre parágrafos
+\setlength{\columnsep}{5mm} % separação entre colunas
+\setlist{itemsep=-5pt, topsep=0pt} % define espaçamento de listas globalmente
+
+% ---
+% CORPO DO TEXTO
+% ---
+\begin{document}
+\SetWatermarkText{RASCUNHO} 
+\SetWatermarkScale{3}
+\sffamily
+
+% ---
+% CAPA
+% ---
+%\begin{titlepage}
+%	\centering
+%	{\sffamily\huge\bfseries Gestão de Capacidade - INTERNET \par}
+%	\vfill
+%	{\Large Ernani Kern - DIRT \par}
+%	\vfill
+%	\today
+%\end{titlepage}
+
+	\title{\textbf{\huge{Gestão de Capacidade - INTERNET}}}
+	\author{\textbf{Ernani Kern - DIRT}}
+
+	\maketitle % mostra os parâmetros acima, senão, não aparecem
+%	\thispagestyle{empty} % oculta a numeração da página
+	\newpage
+	\setcounter{page}{1} % reseta a contagem de páginas, e inicia aqui com '1'
+	\pagenumbering{Roman} % altera para alg romano; o 'R' maiúsculo deixa a numeração em maiúsculas
+	\tableofcontents % cria o sumário
+	\listoffigures % cria sumário de figuras
+	\newpage
+	
+	\setcounter{page}{1} % reinicia de novo a numeração de páginas
+	\pagenumbering{arabic} % numeração de páginas em arábico
+	\onehalfspacing % espaçamento 1,5 entre linhas
+	
+	\section{Canais considerados}
+
+	\begin{itemize}
+		\item Ávato AS262907: dois canais de 2Gbps
+		\item Adylnet AS28282: dois canais de 2Gbps
+	\end{itemize}	
+
+	
+	\section{Canais não considerados}
+	\begin{itemize}
+		\item IX.br de Porto Alegre AS26162: uma fibra óptica apagada, atualmente de 10Gbps. 
+	\end{itemize}
+	
+		Esse canal permite a troca de tráfego com os demais parceiros do IX.br conectados no ponto de troca de tráfego de Porto Alegre. Por ser uma fibra óptica apagada, a velocidade está limitada à capacidade do hardware utilizado na ponta do TRT4 e na ponta do IX.br. 
+	
+	\section{Tráfego de download no DC1}
+	Abaixo temos alguns gráficos dos tráfegos registrados no sistema de monitoração Zabbix (entre setembro de 2024 e maio de 2025 - cada operadora é mostrada duas vezes em cada gráfico devido à mudança dos roteadores Alpha em dezembro/24):
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\linewidth]{images/dc1 download.png}
+		\caption[DC1 Download]{DC1 Download 08-19 hs}
+		\label{fig:dc1d}
+	\end{figure}
+	
+	Acima, a operadora Adylnet teve tráfego máximo de 67,5\% da banda em 22/10/2024, e no restante do período se manteve abaixo de 57\% de uso do link. 
+	A operadora Ávato teve um pico de 50\% em 10/12 e no restante do período não ultrapassou 36\% de uso do link.
+	
+	\section{Tráfego de upload do DC1}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\linewidth]{images/dc1 upload.png}
+		\caption[DC1 Upload]{DC1 Upload 08-19hs}
+		\label{fig:dc1u}
+	\end{figure}
+	
+	No upload a operadora Adylnet atingiu em 11/11/2024 o pico de 84\% de utilização, e se manteve abaixo de 71\% no restante do período. 
+	A Ávato operou abaixo de 50\% de ocupação em todo o período.
+	
+	\section{Tráfego de download do DC2}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\linewidth]{images/dc2 download.png}
+		\caption[DC2 Download]{DC2 Download 08-19 hs}
+		\label{fig:dc2d}
+	\end{figure}
+
+	Acima, a Adylnet teve apenas um pico de 20\% de ocupação em 04/10/2024, e no restante do período teve pouco uso. 
+	A Ávato apresentou picos entre 43\% e 35\% entre 02/10/2024 e 14/12/2024, e no restante do período permaneceu abaixo de 32\% de ocupação do link.
+	
+	\section{Tráfego de upload do DC2}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\linewidth]{images/dc2 upload.png}
+		\caption[DC2 Upload]{DC2 Upload 08-19 hs}
+		\label{fig:dc2u}
+	\end{figure}
+	
+	Neste gráfico o maior tráfego na operadora Adylnet foi de 63\% da capacidade em 04/10/2024; nos demais períodos teve outro pico de 50\% em 10/12/2024 e no restante do tempo se manteve abaixo de 31,5\% de tráfego máximo. 
+	
+	A Ávato teve dois picos de tráfego em 11/09/2024 e 16/04/2025, ambos de 53,5\%, e no restante do tempo se manteve abaixo de 45\% de tráfego máximo. 
+	
+	\section{Conclusão}
+	
+	Conforme visualizado nos gráficos, as operadoras de Internet apresentam apenas alguns picos de utilização em datas isoladas, mantendo uma média de tráfego bem abaixo de suas capacidades atuais, o que não indica necessidade de aumento de links. 
+	
+\end{document}
